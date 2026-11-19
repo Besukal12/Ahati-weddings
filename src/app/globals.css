@@ -1,26 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Fonts */
+  --font-heading: "Anton", sans-serif;
+  --font-body: "DM Sans", sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Brand colors */
+  --color-forest: #102716;
+  --color-lime: #ccf533;
+  --color-orange: #de6d20;
+  --color-background: #f6f0df;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Neutral colors */
+  --color-black: #111111;
+  --color-texts: #515151;
+  --color-white: #ffffff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-black);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-icon {
+  font-weight: 800;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(5px) scale(1.05);
+}
+
+.nav-link {
+  color: var(--color-white);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--color-background);
+  border-color: var(--color-orange);
 }
