@@ -182,7 +182,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <p className="py-5 text-center text-xs text-background/80 sm:text-left sm:text-sm">
-          &copy; {new Date().getFullYear()} Ahati Weddings. All rights reserved.
+          &copy; 2026/7 Ahati Weddings. All rights reserved.
         </p>
       </div>
     </footer>

@@ -5,7 +5,7 @@ import StylesSection from "@/components/sections/StylesSection";
 import { VendorSection } from "@/components/sections/VendorSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
-import { Footer } from "@/components/ui/Footer";
+import { HomeJournal } from "@/components/journal/HomeJournal";
 
 export default function Hero() {
   return (
@@ -24,7 +24,7 @@ export default function Hero() {
 
       <ExperienceSection />
 
-      <Footer />
+      <HomeJournal />
     </div>
   );
 }
