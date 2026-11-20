@@ -76,6 +76,11 @@ export default function StylesSection() {
         className="pointer-events-none absolute left-[55%] top-1/2 hidden size-56 -translate-y-1/2 text-white/10 lg:block xl:size-72"
       />
 
+      <h1 className="absolute flex flex-col whitespace-nowrap font-heading text-[clamp(3rem,20vw,15rem)] uppercase leading-none text-lime opacity-30 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor] md:opacity-40 md:[-webkit-text-stroke:3px_currentColor]">
+        <span>Ahati</span>
+        <span>Weddings</span>
+      </h1>
+
       <div className="relative mx-auto grid w-[90%] max-w-350 items-center gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,4fr)_minmax(0,3fr)] lg:gap-8 xl:gap-12">
         {/* LEFT: photos (bleed above and below the band on desktop) */}
         <div className="relative mx-auto h-76 w-full max-w-md sm:h-96 sm:max-w-xl lg:-my-14 lg:mx-0 lg:h-104 lg:max-w-none xl:h-120">
