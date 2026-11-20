@@ -20,7 +20,7 @@ type Service = {
 };
 
 const SERVICES: Service[] = [
-  { label: "Venues", href: "/services/venues", image: "/ahati_hero_image.png", Icon: Tent },
+  { label: "Venues", href: "/services/venues", image: "/Ahati-decor.jpg", Icon: Tent },
   { label: "Catering", href: "/services/catering", image: "/ahati_hero_image.png", Icon: ConciergeBell },
   { label: "Decoration", href: "/services/decoration", image: "/ahati_hero_image.png", Icon: Flower },
   { label: "Photography", href: "/services/photography", image: "/ahati_hero_image.png", Icon: Camera },
@@ -73,7 +73,7 @@ function ServiceCard({ label, href, image, Icon }: Service) {
 
 export default function ServicesSection() {
   return (
-    <section className="relative bg-background py-16 md:py-20 lg:py-24">
+    <section className="relative -mt-13 bg-background py-16 md:py-20 lg:py-24">
       <div className="mx-auto grid w-[90%] max-w-[1400px] items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12 xl:gap-16">
         {/* LEFT: text */}
         <div className="flex flex-col items-start">
