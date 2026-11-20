@@ -5,6 +5,7 @@ import { Navbar } from "@/components/ui/Navbar";
 import { Marquee } from "@/components/ui/Marquee";
 import { BackgroundDecor } from "@/components/ui/HeroBackgroundDecor";
 import ServicesSection from "@/components/ui/ServiceSection";
+import StylesSection from "@/components/ui/StylesSection";
 
 const STATS = [
   { value: "500", label: "Happy Couples" },
@@ -123,6 +124,8 @@ export default function Hero() {
       <Marquee />
 
       <ServicesSection />
+
+      <StylesSection />
     </div>
   );
 }
