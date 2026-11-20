@@ -16,6 +16,26 @@
   --color-black: #111111;
   --color-texts: #515151;
   --color-white: #ffffff;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 36s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee-reverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
 
 body {
@@ -29,35 +49,4 @@ h2,
 h3 {
   font-family: var(--font-heading);
   text-transform: uppercase;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding: 10px 20px;
-  border: 1px solid;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.btn-icon {
-  font-weight: 800;
-  transition: transform 0.3s ease-in-out;
-}
-
-.btn:hover .btn-icon {
-  transform: translateX(5px) scale(1.05);
-}
-
-.nav-link {
-  color: var(--color-white);
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-  color: var(--color-background);
-  border-color: var(--color-orange);
 }
