@@ -21,11 +21,11 @@ type Service = {
 
 const SERVICES: Service[] = [
   { label: "Venues", href: "/services/venues", image: "/Ahati-decor.jpg", Icon: Tent },
-  { label: "Catering", href: "/services/catering", image: "/ahati_hero_image.png", Icon: ConciergeBell },
-  { label: "Decoration", href: "/services/decoration", image: "/ahati_hero_image.png", Icon: Flower },
-  { label: "Photography", href: "/services/photography", image: "/ahati_hero_image.png", Icon: Camera },
-  { label: "Transportation", href: "/services/transportation", image: "/ahati_hero_image.png", Icon: CarFront },
-  { label: "Production", href: "/services/production", image: "/ahati_hero_image.png", Icon: Clapperboard },
+  { label: "Catering", href: "/services/catering", image: "/wedding catering.webp", Icon: ConciergeBell },
+  { label: "Decoration", href: "/services/decoration", image: "/Ahati-decor2.jpg", Icon: Flower },
+  { label: "Photography", href: "/services/photography", image: "/Ahati-decor.webp", Icon: Camera },
+  { label: "Transportation", href: "/services/transportation", image: "/wedding-car.jpg", Icon: CarFront },
+  { label: "Production", href: "/services/production", image: "/wedding-production.webp", Icon: Clapperboard },
 ];
 
 function ServiceCard({ label, href, image, Icon }: Service) {

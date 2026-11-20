@@ -27,7 +27,7 @@ export const POSTS: Post[] = [
     category: "Traditions",
     date: "2026-11-10",
     readTime: "8 min read",
-    image: "/journal/traditions.jpg",
+    image: "/Ahati-decor2.jpg",
   },
   {
     slug: "choosing-your-wedding-style",
@@ -37,7 +37,7 @@ export const POSTS: Post[] = [
     category: "Styles",
     date: "2026-10-28",
     readTime: "5 min read",
-    image: "/journal/styles.jpg",
+    image: "/Ahati-decor.jpg",
   },
   {
     slug: "wedding-planning-timeline",
@@ -47,7 +47,7 @@ export const POSTS: Post[] = [
     category: "Planning",
     date: "2026-10-15",
     readTime: "6 min read",
-    image: "/journal/timeline.jpg",
+    image: "/wedding catering.webp",
   },
   {
     slug: "garden-wedding-in-addis",
@@ -57,7 +57,7 @@ export const POSTS: Post[] = [
     category: "Real Weddings",
     date: "2026-09-30",
     readTime: "4 min read",
-    image: "/journal/real-wedding.jpg",
+    image: "/Ahati-decor.webp",
   },
   {
     slug: "how-to-choose-a-photographer",
@@ -67,7 +67,7 @@ export const POSTS: Post[] = [
     category: "Vendors",
     date: "2026-09-12",
     readTime: "5 min read",
-    image: "/journal/photographer.jpg",
+    image: "/wedding-production.webp",
   },
   {
     slug: "traditional-dress-ideas",
@@ -77,7 +77,7 @@ export const POSTS: Post[] = [
     category: "Styles",
     date: "2026-08-25",
     readTime: "4 min read",
-    image: "/journal/dress.jpg",
+    image: "/ahati_hero_image.png",
   },
   {
     slug: "catering-menu-ideas",
@@ -87,6 +87,6 @@ export const POSTS: Post[] = [
     category: "Planning",
     date: "2026-08-08",
     readTime: "6 min read",
-    image: "/journal/catering.jpg",
+    image: "/wedding-car.jpg",
   },
 ];

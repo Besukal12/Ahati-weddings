@@ -92,7 +92,7 @@ export function ExperienceSection() {
         <div className="relative h-72 w-full sm:h-80 lg:h-auto lg:w-[28%] lg:min-w-[20rem] lg:shrink-0">
           <div className="absolute inset-0 bg-neutral-700 [clip-path:polygon(0_14%,100%_0,100%_100%,0_100%)] lg:[clip-path:polygon(38%_0,100%_0,100%_100%,0_100%)]">
             <Image
-              src="/ahati_hero_image.png"
+              src="/Ahati-decor2.jpg"
               alt="Smiling Ethiopian bride holding a traditional fan"
               fill
               priority

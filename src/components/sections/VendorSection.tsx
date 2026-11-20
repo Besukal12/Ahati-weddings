@@ -6,7 +6,7 @@ const VENDORS = [
   {
     label: "Music & DJ",
     href: "/vendors?category=music",
-    image: "/Ahati-decor2.jpg",
+    image: "/wedding-production.webp",
     alt: "DJ mixing on a console",
   },
   {
@@ -18,13 +18,13 @@ const VENDORS = [
   {
     label: "Makeup & Beauty",
     href: "/vendors?category=makeup",
-    image: "/Ahati-decor.jpg",
+    image: "/ahati_hero_image.png",
     alt: "Bride having her makeup applied",
   },
   {
     label: "Bridal Styling",
     href: "/vendors?category=styling",
-    image: "/Ahati-decor2.jpg",
+    image: "/Ahati-decor.webp",
     alt: "Bride with curly hair and floral hairpiece",
   },
 ];

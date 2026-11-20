@@ -10,13 +10,13 @@ const STYLES = [
     label: "Traditional Elegance",
     slug: "traditional-elegance",
     main: "/Ahati-decor2.jpg",
-    side: "/Ahati-decor2.jpg",
+    side: "/Ahati-decor.jpg",
   },
   {
     label: "Modern Luxury",
     slug: "modern-luxury",
     main: "/Ahati-decor.jpg",
-    side: "/Ahati-decor.jpg",
+    side: "/Ahati-decor.webp",
   },
   {
     label: "Cultural Fusion",
