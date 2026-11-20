@@ -76,9 +76,9 @@ export default function StylesSection() {
         className="pointer-events-none absolute left-[55%] top-1/2 hidden size-56 -translate-y-1/2 text-white/10 lg:block xl:size-72"
       />
 
-      <div className="relative mx-auto grid w-[90%] max-w-[1400px] items-center gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,4fr)_minmax(0,3fr)] lg:gap-8 xl:gap-12">
+      <div className="relative mx-auto grid w-[90%] max-w-350 items-center gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,4fr)_minmax(0,3fr)] lg:gap-8 xl:gap-12">
         {/* LEFT: photos (bleed above and below the band on desktop) */}
-        <div className="relative mx-auto h-[19rem] w-full max-w-md sm:h-[24rem] sm:max-w-xl lg:-my-14 lg:mx-0 lg:h-[26rem] lg:max-w-none xl:h-[30rem]">
+        <div className="relative mx-auto h-76 w-full max-w-md sm:h-96 sm:max-w-xl lg:-my-14 lg:mx-0 lg:h-104 lg:max-w-none xl:h-120">
           <Photo
             images={STYLES.map((s) => s.main)}
             active={active}
