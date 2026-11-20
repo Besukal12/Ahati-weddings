@@ -4,7 +4,7 @@ export function BackgroundDecor() {
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute inset-x-0 top-0 bottom-[60%] z-0 flex items-center justify-center overflow-hidden select-none"
+      className="pointer-events-none absolute inset-x-0 top-0 bottom-[70%] z-0 flex items-center justify-center overflow-hidden select-none"
     >
       <span className="absolute whitespace-nowrap font-heading text-[clamp(5rem,24vw,26rem)] uppercase leading-none text-lime opacity-30 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor] md:opacity-40 md:[-webkit-text-stroke:3px_currentColor]">
         Ethiopian
