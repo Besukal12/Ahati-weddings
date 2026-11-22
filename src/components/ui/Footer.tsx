@@ -101,7 +101,7 @@ function ContactBlock() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
-              className="block rounded-sm transition-all duration-300 hover:-translate-y-1 hover:text-orange focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange"
+              className="relative z-10 inline-flex size-11 items-center justify-center rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:text-orange focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
             >
               {social.icon}
             </a>
@@ -146,7 +146,7 @@ function Badge() {
 /* ---------- Giant "AHATI" that stretches to the full width ---------- */
 function Wordmark() {
   return (
-    <div className="mt-10 select-none" aria-hidden>
+    <div className="pointer-events-none mt-10 select-none" aria-hidden>
       <svg viewBox="0 0 1000 250" className="block w-full overflow-visible">
         <text
           x="0"
