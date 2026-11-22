@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Asterisk, Play } from "lucide-react";
+import { ArrowRight, Asterisk, Images } from "lucide-react";
 import { BackgroundDecor } from "./HeroBackgroundDecor";
 
 const STATS = [
@@ -56,13 +56,13 @@ export function HeroSection() {
               </Link>
 
               <Link
-                href="/story"
+                href="/gallery"
                 className="group flex items-center gap-3 font-semibold text-white"
               >
-                <span className="flex size-11 items-center justify-center rounded-full border-2 border-orange transition-colors group-hover:bg-orange md:size-12">
-                  <Play size={18} fill="currentColor" />
+                <span className="flex size-11 items-center justify-center rounded-full border-2 border-orange transition-colors group-hover:bg-orange group-hover:text-forest md:size-12">
+                  <Images size={18} />
                 </span>
-                Watch Story
+                Explore Gallery
               </Link>
             </div>
 
