@@ -37,7 +37,7 @@ export function HeroSection() {
 
             <h1 className="font-display text-[clamp(3.5rem,16vw,6rem)] font-black uppercase leading-[0.85] text-lime md:text-[clamp(5rem,10vw,9rem)]">
               <span className="block">Ahati</span>
-              <span className="mt-3 block -rotate-2">Weddings</span>
+              <span className="mt-3 block -rotate-2 text-white">Weddings</span>
             </h1>
 
             <p className="mt-5 text-lg font-semibold leading-snug text-white sm:text-xl md:mt-6 md:text-2xl">

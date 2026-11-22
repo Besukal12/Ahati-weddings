@@ -3,7 +3,7 @@ import { ArrowRight, Asterisk } from "lucide-react";
 
 export function JournalCta() {
   return (
-    <section className="bg-background pb-14 md:pb-20">
+    <section className="bg-background pt-14 pb-14 md:pt-20 md:pb-20">
       <div className="mx-auto flex w-[90%] max-w-[1400px] flex-col items-start justify-between gap-6 rounded-3xl bg-lime p-8 sm:p-10 md:flex-row md:items-center md:p-14">
         <div>
           <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-forest sm:text-sm">
