@@ -21,13 +21,14 @@ export function AboutHero() {
         </div>
 
         <h1 className="font-heading text-[clamp(3.25rem,13vw,8.5rem)] uppercase leading-[0.9] text-lime">
-          <span className="block">Ethiopian</span>
-          <span className="block text-background">Wedding Planning</span>
+          <span className="block">Ethiopian weddings</span>
+          <span className="block text-background">planned with purpose</span>
         </h1>
 
-        <p className="mt-6 max-w-xl text-lg font-medium leading-snug text-background/90 sm:text-xl md:text-2xl">
-          Planning support, wedding services, and vendor connections for
-          celebrations across Ethiopia.
+        <p className="mt-6 max-w-2xl text-lg font-medium leading-snug text-background/90 sm:text-xl md:text-2xl">
+          We help couples and families coordinate meaningful Ethiopian Orthodox
+          weddings, with every service, ceremony detail, and trusted supplier
+          working together.
         </p>
       </div>
 

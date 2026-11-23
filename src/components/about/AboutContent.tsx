@@ -6,6 +6,7 @@ import {
   Flower2,
   HeartHandshake,
   Sparkles,
+  Users,
 } from "lucide-react";
 
 const STATS = [
@@ -35,6 +36,23 @@ const VALUES = [
   },
 ];
 
+const TEAM = [
+  {
+    name: "Emnet Begashaw",
+    role: "Founder & Wedding Director",
+    image: "/Ahati-decor2.jpg",
+    description:
+      "Leads the Ahati vision for thoughtful, faith-rooted, and beautifully coordinated celebrations.",
+  },
+  {
+    name: "Ahati Planning Team",
+    role: "Coordination & Vendor Support",
+    image: "/wedding-production.webp",
+    description:
+      "Brings ceremony timelines, venue needs, and specialist suppliers into one clear plan.",
+  },
+];
+
 export function AboutContent() {
   return (
     <>
@@ -46,7 +64,7 @@ export function AboutContent() {
           <div>
             <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm md:text-base">
               <Asterisk className="size-5 md:size-6" strokeWidth={3} />
-              <span>Who We Are</span>
+              <span>Origin &amp; Mission</span>
             </div>
             <h2
               id="about-story-heading"
@@ -57,14 +75,17 @@ export function AboutContent() {
               planning partner.
             </h2>
             <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-texts sm:text-lg">
-              Ahati is an Ethiopian wedding planning service that brings key
-              parts of the planning process together. Couples can explore
-              wedding services, connect with vendors, and find ideas for their
-              celebration in one place.
+              Ahati began with a simple purpose: make it easier for couples and
+              families to plan a safe, organized, and memorable Ethiopian
+              Orthodox wedding. We bring the practical and meaningful parts of
+              the day together, from church requirements and protocols to
+              venues, catering, decor, photography, and transport.
             </p>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-texts sm:text-lg">
-              Our work covers the practical details—from choosing services and
-              suppliers to considering the style and production of the day.
+              We exist to reduce the bottlenecks that can overwhelm a
+              multi-family celebration. Our vision is to help the next
+              generation enter married life with confidence, dignity, and less
+              stress by keeping every plan clear and every detail cared for.
             </p>
             <Link
               href="/services"
@@ -181,32 +202,65 @@ export function AboutContent() {
       </section>
 
       <section
-        aria-labelledby="about-promise-heading"
-        className="bg-forest px-[5%] py-16 sm:py-20 lg:py-24"
+        aria-labelledby="about-team-heading"
+        className="bg-background pb-16 sm:pb-20 lg:pb-24"
       >
-        <div className="mx-auto grid max-w-[1400px] gap-8 rounded-3xl border border-orange/50 bg-white/[0.03] p-7 sm:p-10 md:grid-cols-[auto_1fr] md:items-center md:gap-12 md:p-14">
-          <div className="flex size-14 items-center justify-center rounded-full bg-orange text-forest">
-            <Asterisk size={30} strokeWidth={2.5} />
-          </div>
-          <div>
-            <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm">
-              <span>What Ahati does</span>
+        <div className="mx-auto w-[90%] max-w-[1400px]">
+          <div className="mb-9 flex flex-col justify-between gap-5 border-t border-forest/15 pt-10 sm:mb-12 sm:flex-row sm:items-end">
+            <div className="max-w-2xl">
+              <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm md:text-base">
+                <Users className="size-5 md:size-6" strokeWidth={2.5} />
+                <span>People &amp; Culture</span>
+              </div>
+              <h2
+                id="about-team-heading"
+                className="font-heading text-[clamp(2.75rem,9vw,5rem)] uppercase leading-[0.92] text-forest"
+              >
+                Care lives in every detail
+              </h2>
             </div>
-            <h2
-              id="about-promise-heading"
-              className="font-heading text-[clamp(2rem,7vw,4rem)] uppercase leading-[0.98] text-background"
-            >
-              Ethiopian wedding planning,{" "}
-              <span className="text-lime">services, and vendors</span> in one
-              place.
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-background/75 sm:text-lg">
-              Explore planning support, compare service categories, and find
-              specialists for traditional, modern, and cultural-fusion weddings.
+            <p className="max-w-md text-base leading-relaxed text-texts sm:text-lg">
+              Our team approach combines calm coordination, cultural respect,
+              and a clear plan for everyone involved.
             </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2">
+            {TEAM.map((person, index) => (
+              <article
+                key={person.name}
+                className="group grid overflow-hidden rounded-2xl bg-white/70 shadow-sm shadow-forest/5 sm:grid-cols-[minmax(12rem,0.8fr)_1.2fr]"
+              >
+                <div className="relative min-h-72 overflow-hidden bg-forest sm:min-h-80">
+                  <Image
+                    src={person.image}
+                    alt={index === 0 ? "Emnet Begashaw, Ahati wedding director" : "Ahati wedding coordination team"}
+                    fill
+                    sizes="(max-width: 767px) 90vw, (max-width: 1024px) 45vw, 35vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 bg-gradient-to-t from-forest/60 via-transparent to-transparent"
+                  />
+                </div>
+                <div className="flex flex-col justify-end p-6 sm:p-8">
+                  <p className="text-xs font-bold uppercase tracking-wider text-orange">
+                    {person.role}
+                  </p>
+                  <h3 className="mt-2 font-heading text-3xl uppercase leading-tight text-forest">
+                    {person.name}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-texts sm:text-base">
+                    {person.description}
+                  </p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
+
     </>
   );
 }

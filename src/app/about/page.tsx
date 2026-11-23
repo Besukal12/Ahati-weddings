@@ -5,7 +5,7 @@ import { AboutContent } from "@/components/about/AboutContent";
 export const metadata: Metadata = {
   title: "About | Ahati Weddings",
   description:
-    "Get to know Ahati Weddings: thoughtful planning, trusted wedding services, and celebrations rooted in Ethiopian tradition.",
+    "Meet Ahati Weddings and discover our mission to make Ethiopian Orthodox celebrations safe, organized, meaningful, and unforgettable.",
 };
 
 export default function AboutPage() {
