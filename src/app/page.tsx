@@ -9,7 +9,7 @@ import { HomeJournal } from "@/components/journal/HomeJournal";
 
 export default function Hero() {
   return (
-    <div className="relative isolate flex min-h-svh flex-col overflow-hidden bg-forest">
+    <div className="relative isolate flex min-h-svh flex-col overflow-hidden bg-burgundy">
       <Navbar />
 
       <HeroSection />

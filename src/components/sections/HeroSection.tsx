@@ -23,9 +23,9 @@ export function HeroSection() {
         {/* TEXT */}
         <div className="relative z-20 mx-auto flex w-[90%] max-w-[1400px] flex-1 items-center pt-28 sm:pt-32 md:pb-16 md:pt-36">
           <div className="flex w-full flex-col items-start md:w-[52%]">
-            <div className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-bold uppercase tracking-wider text-lime sm:gap-x-3 sm:text-sm md:mb-5 md:text-base">
+            <div className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-bold uppercase tracking-wider text-gold-second sm:gap-x-3 sm:text-sm md:mb-5 md:text-base">
               <Asterisk
-                className="size-5 text-orange md:size-6"
+                className="size-5 text-gold md:size-6"
                 strokeWidth={3}
               />
               <span>Plan</span>
@@ -35,7 +35,7 @@ export function HeroSection() {
               <span>Remember</span>
             </div>
 
-            <h1 className="font-display text-[clamp(3.5rem,16vw,6rem)] font-black uppercase leading-[0.85] text-lime md:text-[clamp(5rem,10vw,9rem)]">
+            <h1 className="font-display text-[clamp(3.5rem,16vw,6rem)] font-black uppercase leading-[0.85] text-gold-second md:text-[clamp(5rem,10vw,9rem)]">
               <span className="block">Ahati</span>
               <span className="mt-3 block -rotate-2 text-white">Weddings</span>
             </h1>
@@ -49,7 +49,7 @@ export function HeroSection() {
             <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-4 md:mt-7">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-orange px-6 py-3 font-bold text-forest transition-colors hover:bg-lime md:px-7 md:py-3.5"
+                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 font-bold text-burgundy transition-colors hover:bg-gold-second md:px-7 md:py-3.5"
               >
                 Start Planning
                 <ArrowRight size={20} />
@@ -59,7 +59,7 @@ export function HeroSection() {
                 href="/gallery"
                 className="group flex items-center gap-3 font-semibold text-white"
               >
-                <span className="flex size-11 items-center justify-center rounded-full border-2 border-orange transition-colors group-hover:bg-orange group-hover:text-forest md:size-12">
+                <span className="flex size-11 items-center justify-center rounded-full border-2 border-gold transition-colors group-hover:bg-gold group-hover:text-burgundy md:size-12">
                   <Images size={18} />
                 </span>
                 Explore Gallery
@@ -77,7 +77,7 @@ export function HeroSection() {
                 >
                   <dt className="font-display text-3xl font-black text-white md:text-4xl">
                     {value}
-                    <span className="text-orange">+</span>
+                    <span className="text-gold">+</span>
                   </dt>
                   <dd className="mt-1 text-[0.7rem] font-semibold uppercase tracking-wider text-white/70 md:text-xs">
                     {label}
@@ -101,14 +101,14 @@ export function HeroSection() {
           />
 
           {/* Badge */}
-          <div className="absolute bottom-[24%] right-0 flex -rotate-6 items-center gap-2 bg-background px-3 py-2 shadow-lg sm:px-4 sm:py-3 md:right-[3%] md:gap-3 md:px-6 md:py-4">
-            <p className="font-display text-xs font-extrabold uppercase leading-tight text-forest sm:text-sm md:text-lg lg:text-xl">
+          <div className="absolute bottom-[24%] right-0 flex -rotate-6 items-center gap-2 bg-ivory px-3 py-2 shadow-lg sm:px-4 sm:py-3 md:right-[3%] md:gap-3 md:px-6 md:py-4">
+            <p className="font-display text-xs font-extrabold uppercase leading-tight text-burgundy sm:text-sm md:text-lg lg:text-xl">
               Ethiopian
               <br />
               Wedding Planner
             </p>
             <Asterisk
-              className="size-4 text-forest md:size-5"
+              className="size-4 text-burgundy md:size-5"
               strokeWidth={3}
             />
           </div>

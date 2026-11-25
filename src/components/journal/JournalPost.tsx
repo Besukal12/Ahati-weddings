@@ -18,12 +18,12 @@ export function JournalPost({
 }) {
   return (
     <main>
-      <header className="relative isolate overflow-hidden bg-forest">
+      <header className="relative isolate overflow-hidden bg-burgundy">
         <Navbar />
 
         <span
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 select-none overflow-hidden text-center font-heading text-[clamp(6rem,24vw,22rem)] uppercase leading-[0.8] text-lime opacity-20 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor]"
+          className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 select-none overflow-hidden text-center font-heading text-[clamp(6rem,24vw,22rem)] uppercase leading-[0.8] text-gold-second opacity-20 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor]"
         >
           Journal
         </span>
@@ -31,7 +31,7 @@ export function JournalPost({
         <div className="mx-auto w-[90%] max-w-[1400px] pb-14 pt-32 sm:pb-16 sm:pt-36 md:pb-20 md:pt-44">
           <Link
             href="/journal"
-            className="group mb-8 inline-flex items-center gap-2 text-sm font-bold text-background/80 transition-colors hover:text-lime focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange sm:text-base"
+            className="group mb-8 inline-flex items-center gap-2 text-sm font-bold text-ivory/80 transition-colors hover:text-gold-second focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold sm:text-base"
           >
             <ArrowLeft
               size={18}
@@ -40,37 +40,37 @@ export function JournalPost({
             Back to Journal
           </Link>
 
-          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm">
+          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm">
             <Asterisk className="size-5" strokeWidth={3} />
             <span>{post.category}</span>
           </div>
 
-          <h1 className="max-w-5xl font-heading text-[clamp(2.75rem,10vw,7.5rem)] uppercase leading-[0.92] text-lime">
+          <h1 className="max-w-5xl font-heading text-[clamp(2.75rem,10vw,7.5rem)] uppercase leading-[0.92] text-gold-second">
             {post.title}
           </h1>
 
-          <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-background/85 sm:text-lg md:text-xl">
+          <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-ivory/85 sm:text-lg md:text-xl">
             {post.excerpt}
           </p>
 
-          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-background/65 sm:text-sm">
+          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-ivory/65 sm:text-sm">
             {formatDate(post.date)}
-            <span aria-hidden className="px-2 text-orange">
+            <span aria-hidden className="px-2 text-gold">
               &bull;
             </span>
             {post.readTime}
           </p>
         </div>
 
-        <div className="h-3 bg-lime sm:h-4" aria-hidden />
+        <div className="h-3 bg-gold-second sm:h-4" aria-hidden />
       </header>
 
       <section
         aria-label="Article"
-        className="bg-background pb-14 pt-8 sm:pb-16 sm:pt-10 md:pb-20"
+        className="bg-ivory pb-14 pt-8 sm:pb-16 sm:pt-10 md:pb-20"
       >
         <div className="mx-auto w-[90%] max-w-[1400px]">
-          <div className="relative aspect-[16/9] max-h-[44rem] overflow-hidden rounded-2xl bg-forest sm:rounded-3xl">
+          <div className="relative aspect-[16/9] max-h-[44rem] overflow-hidden rounded-2xl bg-burgundy sm:rounded-3xl">
             <Image
               src={post.image}
               alt=""
@@ -83,7 +83,7 @@ export function JournalPost({
 
           <div className="mx-auto mt-10 grid max-w-6xl gap-10 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16">
             <article className="min-w-0">
-              <div className="mb-8 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm">
+              <div className="mb-8 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm">
                 <Asterisk className="size-5" strokeWidth={3} />
                 <span>From the Ahati Journal</span>
               </div>
@@ -98,7 +98,7 @@ export function JournalPost({
                   >
                     <h2
                       id={`${sectionId(section.heading)}-heading`}
-                      className="font-heading text-3xl uppercase leading-tight text-forest sm:text-4xl"
+                      className="font-heading text-3xl uppercase leading-tight text-burgundy sm:text-4xl"
                     >
                       {section.heading}
                     </h2>
@@ -116,7 +116,7 @@ export function JournalPost({
                           >
                             <Asterisk
                               aria-hidden
-                              className="mt-1 size-5 shrink-0 text-orange"
+                              className="mt-1 size-5 shrink-0 text-gold"
                               strokeWidth={3}
                             />
                             <span>{bullet}</span>
@@ -130,7 +130,7 @@ export function JournalPost({
 
               <Link
                 href="/journal"
-                className="group mt-10 inline-flex items-center gap-2 rounded-full border-2 border-forest px-6 py-3 font-bold text-forest transition-colors hover:border-orange hover:bg-orange focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange"
+                className="group mt-10 inline-flex items-center gap-2 rounded-full border-2 border-burgundy px-6 py-3 font-bold text-burgundy transition-colors hover:border-gold hover:bg-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
               >
                 More Journal Stories
                 <ArrowRight
@@ -140,8 +140,8 @@ export function JournalPost({
               </Link>
             </article>
 
-            <aside className="h-fit rounded-2xl bg-forest p-6 text-background lg:sticky lg:top-8">
-              <h2 className="font-heading text-xl uppercase text-lime sm:text-2xl">
+            <aside className="h-fit rounded-2xl bg-burgundy p-6 text-ivory lg:sticky lg:top-8">
+              <h2 className="font-heading text-xl uppercase text-gold-second sm:text-2xl">
                 In this story
               </h2>
               <nav aria-label="Article contents" className="mt-4">
@@ -150,9 +150,9 @@ export function JournalPost({
                     <li key={section.heading}>
                       <a
                         href={`#${sectionId(section.heading)}`}
-                        className="group flex items-start gap-3 text-sm leading-snug text-background/75 transition-colors hover:text-lime focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange sm:text-base"
+                        className="group flex items-start gap-3 text-sm leading-snug text-ivory/75 transition-colors hover:text-gold-second focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:text-base"
                       >
-                        <span className="font-heading text-orange">
+                        <span className="font-heading text-gold">
                           {String(index + 1).padStart(2, "0")}
                         </span>
                         <span>{section.heading}</span>
@@ -163,7 +163,7 @@ export function JournalPost({
               </nav>
               <Link
                 href="/contact"
-                className="mt-6 inline-flex items-center gap-2 font-bold text-lime transition-colors hover:text-orange"
+                className="mt-6 inline-flex items-center gap-2 font-bold text-gold-second transition-colors hover:text-gold"
               >
                 Start planning
                 <ArrowRight size={17} />
@@ -180,13 +180,13 @@ export function JournalPost({
         >
           <div className="mx-auto w-[90%] max-w-[1400px]">
             <div className="mb-8 sm:mb-10">
-              <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm">
+              <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm">
                 <Asterisk className="size-5" strokeWidth={3} />
                 <span>Keep exploring</span>
               </div>
               <h2
                 id="related-stories-heading"
-                className="font-heading text-[clamp(2.5rem,8vw,4rem)] uppercase leading-[0.95] text-forest"
+                className="font-heading text-[clamp(2.5rem,8vw,4rem)] uppercase leading-[0.95] text-burgundy"
               >
                 More stories for you
               </h2>

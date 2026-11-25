@@ -32,7 +32,7 @@ function ServiceCard({ label, href, image, Icon }: Service) {
   return (
     <Link
       href={href}
-      className="group relative isolate flex aspect-9/6 flex-col justify-between overflow-hidden rounded-xl bg-forest p-5 text-white shadow-md outline-none ring-orange transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:ring-2 sm:aspect-[16/10] md:p-5 lg:aspect-[16/11] xl:aspect-[16/10]"
+      className="group relative isolate flex aspect-9/6 flex-col justify-between overflow-hidden rounded-xl bg-burgundy p-5 text-white shadow-md outline-none ring-gold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:ring-2 sm:aspect-[16/10] md:p-5 lg:aspect-[16/11] xl:aspect-[16/10]"
     >
       {/* Background image */}
       <Image
@@ -46,17 +46,17 @@ function ServiceCard({ label, href, image, Icon }: Service) {
       {/* Forest gradient so text stays readable */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-forest via-forest/80 to-forest/10 transition-opacity duration-300 group-hover:opacity-90"
+        className="absolute inset-0 -z-10 bg-gradient-to-r from-burgundy via-burgundy/80 to-burgundy/10 transition-opacity duration-300 group-hover:opacity-90"
       />
 
       {/* Orange bottom line that grows on hover */}
       <span
         aria-hidden
-        className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-orange transition-transform duration-300 group-hover:scale-x-100"
+        className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-gold transition-transform duration-300 group-hover:scale-x-100"
       />
 
       <Icon
-        className="size-9 transition-colors duration-300 group-hover:text-lime md:size-11"
+        className="size-9 transition-colors duration-300 group-hover:text-gold-second md:size-11"
         strokeWidth={1.5}
       />
 
@@ -64,7 +64,7 @@ function ServiceCard({ label, href, image, Icon }: Service) {
         {label}
         <ArrowRight
           size={18}
-          className="transition-transform duration-300 group-hover:translate-x-1.5 group-hover:text-orange"
+          className="transition-transform duration-300 group-hover:translate-x-1.5 group-hover:text-gold"
         />
       </span>
     </Link>
@@ -73,16 +73,16 @@ function ServiceCard({ label, href, image, Icon }: Service) {
 
 export default function ServicesSection() {
   return (
-    <section className="relative -mt-13 bg-background py-16 md:py-20 lg:py-24">
+    <section className="relative -mt-13 bg-ivory py-16 md:py-20 lg:py-24">
       <div className="mx-auto grid w-[90%] max-w-[1400px] items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12 xl:gap-16">
         {/* LEFT: text */}
         <div className="flex flex-col items-start">
-          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm md:text-base">
+          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm md:text-base">
             <Asterisk className="size-5 md:size-6" strokeWidth={3} />
             <span>Our Services</span>
           </div>
 
-          <h2 className="font-heading text-[clamp(3rem,12vw,4.5rem)] uppercase leading-[0.9] text-forest lg:text-[clamp(3.5rem,5.5vw,5.5rem)]">
+          <h2 className="font-heading text-[clamp(3rem,12vw,4.5rem)] uppercase leading-[0.9] text-burgundy lg:text-[clamp(3.5rem,5.5vw,5.5rem)]">
             <span className="block">Explore</span>
             <span className="block">Our Services</span>
           </h2>
@@ -93,7 +93,7 @@ export default function ServicesSection() {
 
           <Link
             href="/services"
-            className="group mt-5 inline-flex items-center gap-2 font-bold text-forest transition-colors hover:text-orange"
+            className="group mt-5 inline-flex items-center gap-2 font-bold text-burgundy transition-colors hover:text-gold"
           >
             View All Services
             <ArrowRight

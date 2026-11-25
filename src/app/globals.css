@@ -7,10 +7,10 @@
   --font-body: "DM Sans", sans-serif;
 
   /* Brand colors */
-  --color-forest: #102716;
-  --color-lime: #ccf533;
-  --color-orange: #de6d20;
-  --color-background: #f6f0df;
+  --color-burgundy: #5A1F1F;
+  --color-gold: #D4AF37;
+  --color-gold-second: #D4AF37;
+  --color-ivory: #FAF7F0;
 
   /* Neutral colors */
   --color-black: #111111;
@@ -39,7 +39,7 @@
 }
 
 body {
-  background: var(--color-background);
+  background: var(--color-ivory);
   color: var(--color-black);
   font-family: var(--font-body);
 }

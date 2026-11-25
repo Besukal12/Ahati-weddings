@@ -42,7 +42,7 @@ function Photo({
 }) {
   return (
     <div
-      className={`bg-background p-1.5 shadow-2xl shadow-black/40 sm:p-2 md:p-2.5 ${className}`}
+      className={`bg-ivory p-1.5 shadow-2xl shadow-black/40 sm:p-2 md:p-2.5 ${className}`}
     >
       <div className="relative size-full overflow-hidden">
         {images.map((src, i) => (
@@ -68,7 +68,7 @@ export default function StylesSection() {
   const current = STYLES[active];
 
   return (
-    <section className="relative bg-forest md:py-25 sm:py-10">
+    <section className="relative bg-burgundy md:py-25 sm:py-10">
       {/* Faint decorative flower */}
       <Flower
         aria-hidden
@@ -76,7 +76,7 @@ export default function StylesSection() {
         className="pointer-events-none absolute left-[55%] top-1/2 hidden size-56 -translate-y-1/2 text-white/10 lg:block xl:size-72"
       />
 
-      <h1 className="absolute flex flex-col whitespace-nowrap font-heading text-[clamp(3rem,20vw,15rem)] uppercase leading-none text-lime opacity-30 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor] md:opacity-40 md:[-webkit-text-stroke:3px_currentColor]">
+      <h1 className="absolute flex flex-col whitespace-nowrap font-heading text-[clamp(3rem,20vw,15rem)] uppercase leading-none text-gold-second opacity-30 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor] md:opacity-40 md:[-webkit-text-stroke:3px_currentColor]">
         <span>Ahati</span>
         <span>Weddings</span>
       </h1>
@@ -101,12 +101,12 @@ export default function StylesSection() {
 
         {/* MIDDLE: text */}
         <div className="flex flex-col items-start">
-          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm md:text-base">
+          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm md:text-base">
             <Asterisk className="size-5 md:size-6" strokeWidth={3} />
             <span>Find Your Style</span>
           </div>
 
-          <h2 className="font-heading text-[clamp(2.75rem,10vw,4rem)] uppercase leading-[0.95] text-background lg:text-[clamp(2.5rem,4vw,4.25rem)]">
+          <h2 className="font-heading text-[clamp(2.75rem,10vw,4rem)] uppercase leading-[0.95] text-ivory lg:text-[clamp(2.5rem,4vw,4.25rem)]">
             Discover
             <br />
             your wedding
@@ -114,13 +114,13 @@ export default function StylesSection() {
             style
           </h2>
 
-          <p className="mt-5 max-w-sm text-base font-medium leading-snug text-background/90 sm:text-lg">
+          <p className="mt-5 max-w-sm text-base font-medium leading-snug text-ivory/90 sm:text-lg">
             From traditional to modern, explore different themes and aesthetics.
           </p>
 
           <Link
             href={`/styles/${current.slug}`}
-            className="group mt-6 inline-flex items-center gap-2 rounded-full border-2 border-background/80 px-6 py-2.5 text-sm font-bold text-background transition-colors hover:border-orange hover:bg-orange sm:text-base"
+            className="group mt-6 inline-flex items-center gap-2 rounded-full border-2 border-ivory/80 px-6 py-2.5 text-sm font-bold text-ivory transition-colors hover:border-gold hover:bg-gold sm:text-base"
           >
             Explore Styles
             <ArrowRight
@@ -147,15 +147,15 @@ export default function StylesSection() {
                   <span
                     className={`flex size-10 shrink-0 items-center justify-center rounded-sm border-2 font-heading text-lg transition-colors duration-300 sm:size-11 ${
                       isActive
-                        ? "border-orange bg-orange text-white"
-                        : "border-white/80 text-white group-hover:border-orange group-focus-visible:border-orange"
+                        ? "border-gold bg-gold text-white"
+                        : "border-white/80 text-white group-hover:border-gold group-focus-visible:border-gold"
                     }`}
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span
                     className={`text-base font-semibold leading-tight transition-colors duration-300 sm:text-lg ${
-                      isActive ? "text-lime" : "text-background"
+                      isActive ? "text-gold-second" : "text-ivory"
                     }`}
                   >
                     {label}

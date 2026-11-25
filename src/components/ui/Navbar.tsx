@@ -68,14 +68,14 @@ export function Navbar() {
               <Link
                 href={href}
                 aria-current={isActive(href) ? "page" : undefined}
-                className={`relative py-2 text-sm font-semibold transition-colors hover:text-lime xl:text-base ${
+                className={`relative py-2 text-sm font-semibold transition-colors hover:text-gold-second xl:text-base ${
                   isActive(href) ? "text-white" : "text-white/80"
                 }`}
               >
                 {label}
                 <span
                   aria-hidden
-                  className={`absolute inset-x-0 -bottom-0.5 h-0.5 origin-left bg-orange transition-transform duration-300 ${
+                  className={`absolute inset-x-0 -bottom-0.5 h-0.5 origin-left bg-gold transition-transform duration-300 ${
                     isActive(href) ? "scale-x-100" : "scale-x-0"
                   }`}
                 />
@@ -87,7 +87,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <Link
           href="/contact"
-          className="hidden items-center gap-2 rounded-full bg-orange px-6 py-3 font-bold text-forest transition-colors hover:bg-lime lg:inline-flex"
+          className="hidden items-center gap-2 rounded-full bg-gold px-6 py-3 font-bold text-burgundy transition-colors hover:bg-gold-second lg:inline-flex"
         >
           Start Planning
           <ArrowRight size={18} />
@@ -100,7 +100,7 @@ export function Navbar() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="flex size-11 items-center justify-center rounded-full border-2 border-orange text-white transition-colors hover:bg-orange hover:text-forest lg:hidden"
+          className="flex size-11 items-center justify-center rounded-full border-2 border-gold text-white transition-colors hover:bg-gold hover:text-burgundy lg:hidden"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -113,7 +113,7 @@ export function Navbar() {
           open ? "visible grid-rows-[1fr]" : "invisible grid-rows-[0fr]"
         }`}
       >
-        <div className="overflow-hidden bg-forest">
+        <div className="overflow-hidden bg-burgundy">
           <div className="mx-auto flex w-[90%] max-w-[1400px] flex-col gap-6 pb-8 pt-2">
             <ul className="flex flex-col">
               {links.map(({ label, href }) => (
@@ -121,13 +121,13 @@ export function Navbar() {
                   <Link
                     href={href}
                     aria-current={isActive(href) ? "page" : undefined}
-                    className={`flex items-center justify-between py-4 text-lg font-semibold transition-colors hover:text-lime ${
-                      isActive(href) ? "text-lime" : "text-white"
+                    className={`flex items-center justify-between py-4 text-lg font-semibold transition-colors hover:text-gold-second ${
+                      isActive(href) ? "text-gold-second" : "text-white"
                     }`}
                   >
                     {label}
                     {isActive(href) && (
-                      <span className="size-2 rounded-full bg-orange" />
+                      <span className="size-2 rounded-full bg-gold" />
                     )}
                   </Link>
                 </li>
@@ -136,7 +136,7 @@ export function Navbar() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-orange px-7 py-3.5 font-bold text-forest transition-colors hover:bg-lime"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 font-bold text-burgundy transition-colors hover:bg-gold-second"
             >
               Start Planning
               <ArrowRight size={18} />

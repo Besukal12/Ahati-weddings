@@ -49,11 +49,11 @@ function getVideoEmbedUrl(rawUrl: string) {
 function PhotoGallery() {
   if (GALLERY_PHOTOS.length === 0) {
     return (
-      <div className="rounded-3xl border-2 border-dashed border-forest/20 bg-white/70 px-6 py-12 text-center sm:px-10 sm:py-16">
-        <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-lime text-forest">
+      <div className="rounded-3xl border-2 border-dashed border-burgundy/20 bg-white/70 px-6 py-12 text-center sm:px-10 sm:py-16">
+        <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-gold-second text-burgundy">
           <Camera size={26} strokeWidth={1.7} />
         </div>
-        <h3 className="mt-5 font-heading text-2xl uppercase text-forest sm:text-3xl">
+        <h3 className="mt-5 font-heading text-2xl uppercase text-burgundy sm:text-3xl">
           Photos are on the way
         </h3>
         <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-texts sm:text-base">
@@ -68,7 +68,7 @@ function PhotoGallery() {
     <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {GALLERY_PHOTOS.map((photo) => (
         <li key={photo.src}>
-          <figure className="group relative overflow-hidden rounded-2xl bg-forest">
+          <figure className="group relative overflow-hidden rounded-2xl bg-burgundy">
             <div className="relative aspect-[4/5]">
               <Image
                 src={photo.src}
@@ -79,10 +79,10 @@ function PhotoGallery() {
               />
               <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-t from-forest/90 via-forest/10 to-transparent"
+                className="absolute inset-0 bg-gradient-to-t from-burgundy/90 via-burgundy/10 to-transparent"
               />
               <figcaption className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-                <span className="rounded-full bg-orange px-3 py-1 text-xs font-bold uppercase tracking-wider text-forest">
+                <span className="rounded-full bg-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-burgundy">
                   {photo.category}
                 </span>
                 <p className="mt-3 font-heading text-2xl uppercase leading-tight text-white sm:text-3xl">
@@ -102,14 +102,14 @@ function VideoGallery() {
     return (
       <div className="rounded-3xl border border-white/15 bg-white/[0.04] px-6 py-10 sm:px-10 sm:py-12">
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-7">
-          <div className="flex size-14 shrink-0 items-center justify-center rounded-full bg-orange text-forest">
+          <div className="flex size-14 shrink-0 items-center justify-center rounded-full bg-gold text-burgundy">
             <Clapperboard size={25} strokeWidth={1.7} />
           </div>
           <div>
-            <h3 className="font-heading text-2xl uppercase text-background sm:text-3xl">
+            <h3 className="font-heading text-2xl uppercase text-ivory sm:text-3xl">
               Films coming soon
             </h3>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-background/75 sm:text-base">
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ivory/75 sm:text-base">
               YouTube and Vimeo wedding films will have a dedicated space here
               alongside the photo gallery.
             </p>
@@ -140,11 +140,11 @@ function VideoGallery() {
                 allowFullScreen
               />
             ) : (
-              <div className="flex aspect-video items-center justify-center px-6 text-center text-sm text-background/75">
+              <div className="flex aspect-video items-center justify-center px-6 text-center text-sm text-ivory/75">
                 This video needs a valid YouTube or Vimeo URL.
               </div>
             )}
-            <h3 className="p-4 font-heading text-xl uppercase text-background sm:text-2xl">
+            <h3 className="p-4 font-heading text-xl uppercase text-ivory sm:text-2xl">
               {video.title}
             </h3>
           </li>
@@ -159,17 +159,17 @@ export function GalleryContent() {
     <main>
       <section
         aria-labelledby="gallery-photos-heading"
-        className="bg-background py-14 sm:py-16 md:py-20"
+        className="bg-ivory py-14 sm:py-16 md:py-20"
       >
         <div className="mx-auto w-[90%] max-w-[1400px]">
           <div className="mb-8 max-w-2xl sm:mb-10">
-            <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm">
+            <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm">
               <Asterisk className="size-5" strokeWidth={3} />
               <span>Photo Gallery</span>
             </div>
             <h2
               id="gallery-photos-heading"
-              className="font-heading text-[clamp(2.75rem,9vw,5rem)] uppercase leading-[0.94] text-forest"
+              className="font-heading text-[clamp(2.75rem,9vw,5rem)] uppercase leading-[0.94] text-burgundy"
             >
               The celebrations
               <br className="hidden sm:block" /> we bring together
@@ -186,17 +186,17 @@ export function GalleryContent() {
 
       <section
         aria-labelledby="gallery-videos-heading"
-        className="bg-forest py-14 sm:py-16 md:py-20"
+        className="bg-burgundy py-14 sm:py-16 md:py-20"
       >
         <div className="mx-auto w-[90%] max-w-[1400px]">
           <div className="mb-8 max-w-2xl sm:mb-10">
-            <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm">
+            <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm">
               <Asterisk className="size-5" strokeWidth={3} />
               <span>Video Highlights</span>
             </div>
             <h2
               id="gallery-videos-heading"
-              className="font-heading text-[clamp(2.75rem,9vw,5rem)] uppercase leading-[0.94] text-background"
+              className="font-heading text-[clamp(2.75rem,9vw,5rem)] uppercase leading-[0.94] text-ivory"
             >
               Moments in motion
             </h2>
@@ -206,7 +206,7 @@ export function GalleryContent() {
 
           <Link
             href="/contact"
-            className="group mt-8 inline-flex items-center gap-2 rounded-full bg-orange px-6 py-3 font-bold text-forest transition-colors hover:bg-lime focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime"
+            className="group mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 font-bold text-burgundy transition-colors hover:bg-gold-second focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-second"
           >
             Start planning
             <ArrowRight

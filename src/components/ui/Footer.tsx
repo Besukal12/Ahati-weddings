@@ -31,9 +31,9 @@ const CONTACT = {
 };
 
 /* ---------- Shared styles ---------- */
-const headingStyle = "font-heading text-base uppercase tracking-wide text-lime";
+const headingStyle = "font-heading text-base uppercase tracking-wide text-gold-second";
 const linkStyle =
-  "rounded-sm text-background transition-colors hover:text-orange focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange";
+  "rounded-sm text-ivory transition-colors hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold";
 
 /* ---------- Link columns ---------- */
 function FooterLinks() {
@@ -72,7 +72,7 @@ function ContactBlock() {
 
       <Link
         href="/contact"
-        className="group flex w-full items-center justify-between rounded-full bg-background py-3 pl-6 pr-4 font-semibold text-forest transition-colors hover:bg-orange hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
+        className="group flex w-full items-center justify-between rounded-full bg-ivory py-3 pl-6 pr-4 font-semibold text-burgundy transition-colors hover:bg-gold hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
       >
         Start planning
         <ArrowRight
@@ -93,7 +93,7 @@ function ContactBlock() {
         </a>
       </div>
 
-      <ul className="flex items-center gap-4 text-lime">
+      <ul className="flex items-center gap-4 text-gold-second">
         {SOCIALS.map((social) => (
           <li key={social.label}>
             <a
@@ -101,7 +101,7 @@ function ContactBlock() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
-              className="relative z-10 inline-flex size-11 items-center justify-center rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:text-orange focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
+              className="relative z-10 inline-flex size-11 items-center justify-center rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
             >
               {social.icon}
             </a>
@@ -117,7 +117,7 @@ function Badge() {
   return (
     <div
       aria-hidden
-      className="relative flex size-24 shrink-0 items-center justify-center rounded-full bg-lime text-forest sm:size-28 xl:size-32"
+      className="relative flex size-24 shrink-0 items-center justify-center rounded-full bg-gold-second text-burgundy sm:size-28 xl:size-32"
     >
       <svg
         viewBox="0 0 100 100"
@@ -129,7 +129,7 @@ function Badge() {
             d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"
           />
         </defs>
-        <text className="fill-forest font-heading text-[9.5px] uppercase tracking-[0.14em]">
+        <text className="fill-burgundy font-heading text-[9.5px] uppercase tracking-[0.14em]">
           <textPath href="#footer-badge-circle">
             Ahati Weddings &bull; Plan &bull; Celebrate &bull; Remember &bull;
           </textPath>
@@ -154,7 +154,7 @@ function Wordmark() {
           fontSize="300"
           textLength="1000"
           lengthAdjust="spacingAndGlyphs"
-          className="fill-background font-heading uppercase"
+          className="fill-ivory font-heading uppercase"
         >
           Ahati
         </text>
@@ -166,13 +166,13 @@ function Wordmark() {
 /* ---------- Footer ---------- */
 export function Footer() {
   return (
-    <footer className="w-full bg-background p-3 sm:p-4">
-      <div className="mx-auto w-full max-w-[1600px] overflow-hidden rounded-3xl bg-forest px-6 pt-8 sm:px-8 sm:pt-10 lg:px-12 lg:pt-12">
+    <footer className="w-full bg-ivory p-3 sm:p-4">
+      <div className="mx-auto w-full max-w-[1600px] overflow-hidden rounded-3xl bg-burgundy px-6 pt-8 sm:px-8 sm:pt-10 lg:px-12 lg:pt-12">
         {/* Top row: links | divider | contact + badge */}
         <div className="grid gap-10 lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-12 xl:gap-16">
           <FooterLinks />
 
-          <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between lg:border-l lg:border-lime/50 lg:pl-12 xl:pl-16">
+          <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between lg:border-l lg:border-gold-second/50 lg:pl-12 xl:pl-16">
             <ContactBlock />
             <Badge />
           </div>
@@ -181,7 +181,7 @@ export function Footer() {
         <Wordmark />
 
         {/* Bottom bar */}
-        <p className="py-5 text-center text-xs text-background/80 sm:text-left sm:text-sm">
+        <p className="py-5 text-center text-xs text-ivory/80 sm:text-left sm:text-sm">
           &copy; 2026/7 Ahati Weddings. All rights reserved.
         </p>
       </div>

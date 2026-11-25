@@ -31,16 +31,16 @@ const VENDORS = [
 
 export function VendorSection() {
   return (
-    <section className="relative bg-background py-16 md:py-20 lg:py-24">
+    <section className="relative bg-ivory py-16 md:py-20 lg:py-24">
       <div className="mx-auto grid w-[90%] max-w-[1400px] items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12 xl:gap-16">
         {/* LEFT: text */}
         <div className="flex flex-col items-start z-10">
-          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange sm:text-sm md:text-base">
+          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold sm:text-sm md:text-base">
             <Asterisk className="size-5 md:size-6" strokeWidth={3} />
             <span>Our Vendors</span>
           </div>
 
-          <h2 className="font-heading text-[clamp(3rem,12vw,4.5rem)] uppercase leading-[0.9] text-forest lg:text-[clamp(3.5rem,5.5vw,5.5rem)]">
+          <h2 className="font-heading text-[clamp(3rem,12vw,4.5rem)] uppercase leading-[0.9] text-burgundy lg:text-[clamp(3.5rem,5.5vw,5.5rem)]">
             <span className="block">Discover</span>
             <span className="block">Trusted Vendors</span>
           </h2>
@@ -51,7 +51,7 @@ export function VendorSection() {
 
           <Link
             href="/vendors"
-            className="group mt-6 inline-flex items-center gap-2 rounded-full border-2 border-forest px-6 py-2.5 text-sm font-bold text-forest transition-colors hover:border-orange hover:bg-orange sm:text-base"
+            className="group mt-6 inline-flex items-center gap-2 rounded-full border-2 border-burgundy px-6 py-2.5 text-sm font-bold text-burgundy transition-colors hover:border-gold hover:bg-gold sm:text-base"
           >
             Browse Vendors
             <ArrowRight
@@ -61,7 +61,7 @@ export function VendorSection() {
           </Link>
         </div>
 
-        <h1 className="absolute text-right flex w-[92%] flex-col justify-end-safe whitespace-nowrap font-heading text-[clamp(3rem,20vw,15rem)] uppercase leading-none text-forest opacity-30 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor] md:opacity-40 md:[-webkit-text-stroke:3px_currentColor]">
+        <h1 className="absolute text-right flex w-[92%] flex-col justify-end-safe whitespace-nowrap font-heading text-[clamp(3rem,20vw,15rem)] uppercase leading-none text-burgundy opacity-30 [-webkit-text-fill-color:transparent] [-webkit-text-stroke:2px_currentColor] md:opacity-40 md:[-webkit-text-stroke:3px_currentColor]">
           <span>Better</span>
           <span>Services</span>
         </h1>
@@ -72,7 +72,7 @@ export function VendorSection() {
             <li key={label}>
               <Link
                 href={href}
-                className="group relative isolate block aspect-[4/5] overflow-hidden rounded-lg bg-forest shadow-md outline-none ring-orange transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:ring-2 sm:aspect-[3/4] md:aspect-[3/4] lg:aspect-[4/5]"
+                className="group relative isolate block aspect-[4/5] overflow-hidden rounded-lg bg-burgundy shadow-md outline-none ring-gold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:ring-2 sm:aspect-[3/4] md:aspect-[3/4] lg:aspect-[4/5]"
               >
                 <Image
                   src={image}
@@ -83,12 +83,12 @@ export function VendorSection() {
                 />
 
                 {/* Gradient + label: always visible on touch, appears on hover on desktop */}
-                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-forest/90 via-forest/20 to-transparent p-3 opacity-100 transition-opacity duration-300 [@media(hover:hover)]:opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 sm:p-4">
+                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-burgundy/90 via-burgundy/20 to-transparent p-3 opacity-100 transition-opacity duration-300 [@media(hover:hover)]:opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 sm:p-4">
                   <span className="flex w-full items-center justify-between gap-2 text-sm font-semibold text-white sm:text-base">
                     {label}
                     <ArrowRight
                       size={16}
-                      className="shrink-0 text-lime transition-transform duration-300 group-hover:translate-x-1"
+                      className="shrink-0 text-gold-second transition-transform duration-300 group-hover:translate-x-1"
                     />
                   </span>
                 </div>
@@ -96,7 +96,7 @@ export function VendorSection() {
                 {/* Orange line that grows on hover */}
                 <span
                   aria-hidden
-                  className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-orange transition-transform duration-300 group-hover:scale-x-100"
+                  className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-gold transition-transform duration-300 group-hover:scale-x-100"
                 />
               </Link>
             </li>

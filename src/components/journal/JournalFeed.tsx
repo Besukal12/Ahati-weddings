@@ -23,7 +23,7 @@ export function JournalFeed({ posts }: { posts: Post[] }) {
   }
 
   return (
-    <section className="bg-background py-14 md:py-20">
+    <section className="bg-ivory py-14 md:py-20">
       <div className="mx-auto w-[90%] max-w-[1400px]">
         {/* Filter pills (scroll sideways on small screens) */}
         <div className="-mx-[5vw] overflow-x-auto px-[5vw] pb-2 [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
@@ -38,8 +38,8 @@ export function JournalFeed({ posts }: { posts: Post[] }) {
                     aria-pressed={active}
                     className={`whitespace-nowrap rounded-full border-2 px-5 py-2 text-sm font-bold transition-colors sm:text-base ${
                       active
-                        ? "border-forest bg-forest text-lime"
-                        : "border-forest/30 text-forest hover:border-orange hover:text-orange"
+                        ? "border-burgundy bg-burgundy text-gold-second"
+                        : "border-burgundy/30 text-burgundy hover:border-gold hover:text-gold"
                     }`}
                   >
                     {name}
@@ -81,7 +81,7 @@ export function JournalFeed({ posts }: { posts: Post[] }) {
             <button
               type="button"
               onClick={() => setVisible((v) => v + PAGE_SIZE)}
-              className="rounded-full border-2 border-forest px-8 py-3 font-bold text-forest transition-colors hover:border-orange hover:bg-orange"
+              className="rounded-full border-2 border-burgundy px-8 py-3 font-bold text-burgundy transition-colors hover:border-gold hover:bg-gold"
             >
               Load More Stories
             </button>

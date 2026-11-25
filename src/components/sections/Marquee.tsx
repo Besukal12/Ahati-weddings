@@ -36,19 +36,19 @@ function MarqueeGroup({
 export function Marquee() {
   return (
     <div className="relative z-30 -top-5 overflow-hidden py-2 sm:py-12 md:-mt-12 md:py-16">
-      {/* BACK band: orange, tilted the other way, scrolls right */}
-      <div className="absolute left-[-5%] top-1/2 w-[110%] -translate-y-1/2 rotate-[1.5deg] bg-orange py-7.5 md:py-9.5">
-        <div className="animate-marquee-reverse flex w-max font-display text-xs font-extrabold uppercase tracking-wide whitespace-nowrap text-forest sm:text-sm md:text-lg">
+      {/* BACK band: gold, tilted the other way, scrolls right */}
+      <div className="absolute left-[-5%] top-1/2 w-[110%] -translate-y-1/2 rotate-[1.5deg] bg-gold py-7.5 md:py-9.5">
+        <div className="animate-marquee-reverse flex w-max font-display text-xs font-extrabold uppercase tracking-wide whitespace-nowrap text-burgundy sm:text-sm md:text-lg">
           <MarqueeGroup />
           <MarqueeGroup ariaHidden />
         </div>
       </div>
 
-      {/* FRONT band: lime, scrolls left */}
-      <div className="relative -ml-[5%] w-[110%] -rotate-2 bg-lime py-4 shadow-[0_10px_30px_rgba(0,0,0,0.35)] sm:py-5 md:py-7">
-        <div className="animate-marquee flex w-max font-display text-sm font-black uppercase tracking-wide whitespace-nowrap text-forest sm:text-lg md:text-3xl">
-          <MarqueeGroup iconClass="text-orange" />
-          <MarqueeGroup ariaHidden iconClass="text-orange" />
+      {/* FRONT band: gold-second, scrolls left */}
+      <div className="relative -ml-[5%] w-[110%] -rotate-2 bg-gold-second py-4 shadow-[0_10px_30px_rgba(0,0,0,0.35)] sm:py-5 md:py-7">
+        <div className="animate-marquee flex w-max font-display text-sm font-black uppercase tracking-wide whitespace-nowrap text-burgundy sm:text-lg md:text-3xl">
+          <MarqueeGroup iconClass="text-gold" />
+          <MarqueeGroup ariaHidden iconClass="text-gold" />
         </div>
       </div>
     </div>

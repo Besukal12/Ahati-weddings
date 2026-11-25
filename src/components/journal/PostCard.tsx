@@ -17,7 +17,7 @@ export function PostCard({ post }: { post: Post }) {
   return (
     <article className="group relative flex h-full flex-col">
       {/* Image */}
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-forest">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-burgundy">
         <Image
           src={post.image}
           alt=""
@@ -26,13 +26,13 @@ export function PostCard({ post }: { post: Post }) {
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
 
-        <span className="absolute left-3 top-3 rounded-full bg-lime px-3 py-1 text-xs font-bold uppercase tracking-wider text-forest">
+        <span className="absolute left-3 top-3 rounded-full bg-gold-second px-3 py-1 text-xs font-bold uppercase tracking-wider text-burgundy">
           {post.category}
         </span>
 
         <span
           aria-hidden
-          className="absolute bottom-3 right-3 flex size-10 translate-y-2 items-center justify-center rounded-full bg-orange text-white opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+          className="absolute bottom-3 right-3 flex size-10 translate-y-2 items-center justify-center rounded-full bg-gold text-white opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
         >
           <ArrowUpRight size={20} />
         </span>
@@ -44,11 +44,11 @@ export function PostCard({ post }: { post: Post }) {
           {formatDate(post.date)} &bull; {post.readTime}
         </p>
 
-        <h3 className="mt-2 font-heading text-2xl uppercase leading-tight text-forest transition-colors duration-300 group-hover:text-orange">
+        <h3 className="mt-2 font-heading text-2xl uppercase leading-tight text-burgundy transition-colors duration-300 group-hover:text-gold">
           {/* The ::after makes the whole card clickable */}
           <Link
             href={`/journal/${post.slug}`}
-            className="outline-none after:absolute after:inset-0 focus-visible:after:rounded-2xl focus-visible:after:ring-2 focus-visible:after:ring-orange"
+            className="outline-none after:absolute after:inset-0 focus-visible:after:rounded-2xl focus-visible:after:ring-2 focus-visible:after:ring-gold"
           >
             {post.title}
           </Link>
