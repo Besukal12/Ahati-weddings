@@ -49,7 +49,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             alt="Ahati logo"
-            src="/file.svg"
+            src="/icon-logo.png"
             width={40}
             height={40}
             className="size-9 lg:size-10"

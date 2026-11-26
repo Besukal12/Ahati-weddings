@@ -20,7 +20,6 @@ const LINK_GROUPS = [
       { label: "Our Story", href: "/about" },
       { label: "FAQs", href: "/faqs" },
       { label: "Contact", href: "/contact" },
-      { label: "Careers", href: "/careers" },
     ],
   },
 ];
