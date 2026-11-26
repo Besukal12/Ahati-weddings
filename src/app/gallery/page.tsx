@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { GalleryContent } from "@/components/gallery/GalleryContent";
 import { GalleryHero } from "@/components/gallery/GalleryHero";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Gallery | Ahati Weddings",
+export const metadata: Metadata = createPageMetadata({
+  title: "Ethiopian Wedding Gallery | Ahati Weddings",
   description:
-    "Explore wedding photography and films celebrating Ahati Weddings and its couples.",
-};
+    "View wedding photographs and films featuring the details, people, and celebrations shared in the Ahati Weddings gallery.",
+  path: "/gallery",
+});
 
 export default function GalleryPage() {
   return (

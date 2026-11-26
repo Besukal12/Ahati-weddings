@@ -6,6 +6,13 @@ import { VendorSection } from "@/components/sections/VendorSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { HomeJournal } from "@/components/journal/HomeJournal";
+import { createPageMetadata, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  path: "/",
+});
 
 export default function Hero() {
   return (

@@ -26,9 +26,9 @@ export function AboutHero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg font-medium leading-snug text-ivory/90 sm:text-xl md:text-2xl">
-          We help couples and families coordinate meaningful Ethiopian Orthodox
-          weddings, with every service, ceremony detail, and trusted supplier
-          working together.
+          We help couples plan Ethiopian Orthodox Tewahedo Church weddings,
+          bringing wedding preparation and vendor coordination together with
+          respect for traditions meaningful to each couple and family.
         </p>
       </div>
 

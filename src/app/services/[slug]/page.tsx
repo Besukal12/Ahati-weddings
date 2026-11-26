@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, Asterisk, Check } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { SERVICES } from "@/lib/services";
+import { createPageMetadata } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -16,7 +17,16 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const s = SERVICES.find((x) => x.slug === slug);
-  return s ? { title: `${s.label} | Ahati Weddings`, description: s.tagline } : {};
+  return s
+    ? createPageMetadata({
+        title: `${s.label} for Ethiopian Orthodox Weddings | Ahati Weddings`,
+        description: s.description,
+        path: `/services/${s.slug}`,
+      })
+    : {
+        title: "Service Not Found | Ahati Weddings",
+        robots: { index: false, follow: true },
+      };
 }
 
 export default async function ServicePage({ params }: Params) {

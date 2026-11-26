@@ -75,11 +75,11 @@ export function AboutContent() {
               planning partner.
             </h2>
             <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-texts sm:text-lg">
-              Ahati began with a simple purpose: make it easier for couples and
-              families to plan a safe, organized, and memorable Ethiopian
-              Orthodox wedding. We bring the practical and meaningful parts of
-              the day together, from church requirements and protocols to
-              venues, catering, decor, photography, and transport.
+              Ahati helps couples and families organize Ethiopian Orthodox
+              Church weddings by bringing planning and vendor coordination
+              together. We work around the traditions meaningful to each couple
+              and family, and encourage couples to confirm any church-specific
+              requirements directly with their church or clergy.
             </p>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-texts sm:text-lg">
               We exist to reduce the bottlenecks that can overwhelm a

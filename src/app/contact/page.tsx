@@ -3,11 +3,14 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact | Ahati Weddings",
-  description: "Start planning your Ethiopian Orthodox wedding with Ahati Weddings.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact Ahati Weddings | Ethiopian Orthodox Wedding Planning",
+  description:
+    "Contact Ahati Weddings to discuss planning and vendor coordination for your Ethiopian Orthodox Church wedding.",
+  path: "/contact",
+});
 
 // Replace with your real details
 const INFO = [

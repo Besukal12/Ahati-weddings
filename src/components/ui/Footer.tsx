@@ -92,21 +92,23 @@ function ContactBlock() {
         </a>
       </div>
 
-      <ul className="flex items-center gap-4 text-gold-second">
-        {SOCIALS.map((social) => (
-          <li key={social.label}>
-            <a
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={social.label}
-              className="relative z-10 inline-flex size-11 items-center justify-center rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
-            >
-              {social.icon}
-            </a>
-          </li>
-        ))}
-      </ul>
+      {SOCIALS.length > 0 && (
+        <ul className="flex items-center gap-4 text-gold-second">
+          {SOCIALS.map((social) => (
+            <li key={social.label}>
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="relative z-10 inline-flex size-11 items-center justify-center rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+              >
+                {social.icon}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

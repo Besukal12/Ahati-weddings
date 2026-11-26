@@ -4,16 +4,19 @@ import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { FaqList } from "@/components/contact/FaqList";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "FAQs | Ahati Weddings",
-  description: "Answers to common questions about planning with Ahati Weddings.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Ethiopian Orthodox Wedding Planning FAQs | Ahati Weddings",
+  description:
+    "Answers about Ahati Weddings' planning services, vendor coordination, and how couples can get started.",
+  path: "/faqs",
+});
 
 const FAQS = [
   { c: "Planning", q: "How early should we contact you?", a: "Ideally 6–12 months before the wedding, but we also help with shorter timelines." },
   { c: "Planning", q: "Can you plan only part of the wedding?", a: "Yes. Choose full planning or individual services like venue, decoration, or photography." },
-  { c: "Traditions", q: "Do you respect Orthodox ceremony traditions?", a: "Always. We plan around ceremony timelines, fasting seasons, and family customs." },
+  { c: "Traditions", q: "Do you respect Orthodox ceremony traditions?", a: "We coordinate plans around the traditions that are important to each couple and family. Please confirm ceremony practices or church requirements directly with your church or clergy." },
   { c: "Vendors", q: "Do you work with our own vendors?", a: "Yes. We can coordinate your vendors or recommend from our trusted network." },
   { c: "Vendors", q: "How do you choose your vendors?", a: "We work with suppliers who are reliable, experienced, and comfortable with Ethiopian Orthodox weddings." },
   { c: "Pricing", q: "How do we get a quote?", a: "Send a request through the contact page with your date and needs, and we'll reply within 24 hours." },

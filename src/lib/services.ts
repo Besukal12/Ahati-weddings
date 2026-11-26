@@ -23,8 +23,8 @@ export const SERVICES: ServiceItem[] = [
     image: "/wedding catering.webp",
     tagline: "Traditional flavors, served with care.",
     description:
-      "From fasting-friendly menus to full reception feasts, we coordinate trusted caterers who honor Ethiopian Orthodox customs.",
-    includes: ["Menu planning & tasting", "Fasting and non-fasting options", "Service staff coordination", "Drinks and cake arrangements"],
+      "We coordinate caterers and menu plans around the preferences and arrangements shared by each couple and family.",
+    includes: ["Menu planning & tasting", "Menu coordination", "Service staff coordination", "Drinks and cake arrangements"],
   },
   {
     slug: "decoration",

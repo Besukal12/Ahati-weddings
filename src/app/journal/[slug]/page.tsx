@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { JournalPost } from "@/components/journal/JournalPost";
 import { POSTS } from "@/lib/posts";
+import { createPageMetadata } from "@/lib/seo";
 
 type JournalPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -18,18 +19,19 @@ export async function generateMetadata({
   const post = POSTS.find((item) => item.slug === slug);
 
   if (!post) {
-    return { title: "Story Not Found | Ahati Journal" };
+    return {
+      title: "Story Not Found | Ahati Weddings",
+      robots: { index: false, follow: true },
+    };
   }
 
-  return {
-    title: `${post.title} | Ahati Journal`,
+  return createPageMetadata({
+    title: `${post.title} | Ahati Weddings`,
     description: post.excerpt,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      images: [post.image],
-    },
-  };
+    path: `/journal/${post.slug}`,
+    image: post.image,
+    type: "article",
+  });
 }
 
 export default async function JournalPostPage({

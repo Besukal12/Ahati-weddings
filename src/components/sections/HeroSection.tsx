@@ -41,9 +41,9 @@ export function HeroSection() {
             </h1>
 
             <p className="mt-5 text-lg font-semibold leading-snug text-white sm:text-xl md:mt-6 md:text-2xl">
-              Your dream wedding,
+              Ethiopian Orthodox Church wedding planning,
               <br />
-              our expert touch.
+              coordinated with care for your traditions.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-4 md:mt-7">
@@ -103,9 +103,9 @@ export function HeroSection() {
           {/* Badge */}
           <div className="absolute bottom-[24%] right-0 flex -rotate-6 items-center gap-2 bg-ivory px-3 py-2 shadow-lg sm:px-4 sm:py-3 md:right-[3%] md:gap-3 md:px-6 md:py-4">
             <p className="font-display text-xs font-extrabold uppercase leading-tight text-burgundy sm:text-sm md:text-lg lg:text-xl">
-              Ethiopian
+              Ethiopian Orthodox
               <br />
-              Wedding Planner
+              Wedding Planning
             </p>
             <Asterisk
               className="size-4 text-burgundy md:size-5"

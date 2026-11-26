@@ -7,11 +7,14 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Counter } from "@/components/ui/Counter";
 import { SpotlightCard } from "@/components/ui/SpotlightCard";
 import { SERVICES } from "@/lib/services";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services | Ahati Weddings",
-  description: "Venues, catering, decoration, photography, transportation and production for Ethiopian Orthodox weddings.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Ethiopian Orthodox Wedding Planning Services | Ahati Weddings",
+  description:
+    "Explore Ahati Weddings' planning and coordination services for Ethiopian Orthodox Church weddings, including venues, catering, decor, photography, transport, and production.",
+  path: "/services",
+});
 
 const ICONS: Record<string, LucideIcon> = {
   venues: Tent, catering: ConciergeBell, decoration: Flower,
@@ -35,7 +38,7 @@ const STATS = [
 export default function ServicesPage() {
   return (
     <main>
-      <PageHero eyebrow="Our Services" bgWord="Services" line1="Everything for" line2="your big day" text="Six service categories, one coordinated plan. Choose what you need and we handle the rest." />
+      <PageHero eyebrow="Our Services" bgWord="Services" line1="Everything for" line2="your big day" text="Planning and vendor coordination for Ethiopian Orthodox Church weddings, shaped around the traditions meaningful to each couple." />
 
       <section className="bg-ivory py-16 sm:py-20 lg:py-24">
         <div className="mx-auto w-[90%] max-w-[1400px]">

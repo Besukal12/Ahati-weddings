@@ -5,7 +5,7 @@ const ITEMS = [
   "Plan",
   "Celebrate",
   "Remember",
-  "Ethiopian Wedding Planner",
+  "Ethiopian Orthodox Wedding Planning",
 ];
 
 function MarqueeGroup({

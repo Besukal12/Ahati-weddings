@@ -4,11 +4,14 @@ import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { VendorsGrid } from "@/components/contact/VendorsGrid";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Vendors | Ahati Weddings",
-  description: "Trusted music, floral, makeup and bridal styling vendors for your Ethiopian wedding.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Wedding Vendors and Coordination | Ahati Weddings",
+  description:
+    "Explore Ahati Weddings' vendor directory and coordination support for Ethiopian Orthodox Church weddings, including music, floral, beauty, and bridal styling.",
+  path: "/vendors",
+});
 
 export default async function VendorsPage({ searchParams }: { searchParams: Promise<{ category?: string }> }) {
   const { category = "all" } = await searchParams;
