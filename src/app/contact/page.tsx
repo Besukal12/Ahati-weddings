@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
@@ -20,8 +21,16 @@ const INFO = [
   { Icon: Clock, label: "Hours", value: "Mon–Sat, 8:30 AM – 6:00 PM" },
 ];
 
-export default async function ContactPage({ searchParams }: { searchParams: Promise<{ service?: string; vendor?: string }> }) {
+type ContactPageProps = {
+  searchParams: Promise<{ service?: string; vendor?: string }>;
+};
+
+async function ContactRequestForm({ searchParams }: ContactPageProps) {
   const { service, vendor } = await searchParams;
+  return <ContactForm defaultService={service} vendor={vendor} />;
+}
+
+export default function ContactPage({ searchParams }: ContactPageProps) {
   return (
     <main>
       <PageHero eyebrow="Contact Us" bgWord="Contact" line1="Let's plan" line2="together" text="Tell us about your day and we'll reply within 24 hours." />
@@ -52,7 +61,9 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
             </ul>
           </Reveal>
           <Reveal delay={150}>
-            <ContactForm defaultService={service} vendor={vendor} />
+            <Suspense fallback={<ContactForm />}>
+              <ContactRequestForm searchParams={searchParams} />
+            </Suspense>
           </Reveal>
         </div>
       </section>
